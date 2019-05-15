@@ -1,4 +1,27 @@
 /* ================================= 
+  Pantone Colors based on sleepingbiscuit.jpg
+	Fog 
+		sRBG 208 197 177
+		HEX D0C5B1
+	2478 CP (dark brown)
+		sRBG 62 38 42
+		CMYK 47 73 48 67
+		HEX 3E262A
+	True Red
+		sRBG 191 25 50
+		HEX BF1932
+	2468 CP (light caramel)
+		sRBG 158 109 65
+		CMYK 20 51 65 25
+		HEX 9E6D41
+	2443 UP (cinnamon)
+		sRBG 127 73 63
+		CMYK 7 71 100 33
+		HEX	7F493F
+==================================== */
+
+
+/* ================================= 
   Base Element Styles
 ==================================== */
 
@@ -9,7 +32,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: #4b0082;
+	color: #7F493F;
 }
 
 p {
@@ -17,13 +40,11 @@ p {
 	margin-bottom: 1.8em;
 }
 
-h2,
 h3,
 a {
-	color: #093a58;
+	color: #3E262A;
 }
 
-h2,
 h3 {
 	margin-top: 0;
 }
@@ -42,9 +63,11 @@ img {
 
 /* ---- Navigation ---- */
 
-.name {
+.name,
+.sub-head {
 	font-size: 1.25em;
 	margin: 0;
+	color: #BF1932;
 }
 
 .main-nav {
@@ -52,6 +75,7 @@ img {
 }
 
 .name a,
+.main-sub a,
 .main-nav a {
 	text-align: center;
 	display: block;
@@ -82,7 +106,7 @@ img {
 
 .banner {
 	color: #fff;
-	background: #3acec2;
+	background: #9E6D41;;
 	padding: 3.2em 0;
 	margin-bottom: 60px;
 }
@@ -93,7 +117,7 @@ img {
 }
 
 .main-footer {
-	background: #d9e4ea;
+	background: #9E6D41;
 	padding: 2em 0;
 	margin-top: 30px;
 }
@@ -123,12 +147,7 @@ img {
 	.col {
 		float: left;
 	}
-
-	.primary,
-	.secondary {
-		width: 50%;
-	}
-
+	
 	.main-nav {
 		float: right;
 	}
@@ -142,6 +161,10 @@ img {
 		font-size: 1.4em;
 	}
 
+	.one,
+	.two {
+		width: 50%;
+	}
 	/* ---- Float clearfix ---- */
 
 	.clearfix::after {
@@ -149,7 +172,6 @@ img {
 		display: table;
 		clear: both;
 	}
-
 }
 
 @media (min-width: 1025px) {
@@ -160,12 +182,18 @@ img {
 	}
 
 	.primary {
-		width: 40%;
+		width: 100%;
 	}
 
 	.secondary,
 	.tertiary {
-		width: 30%;
+		width: 100%;
+	}
+
+	.one,
+	.two,
+	.three {
+		width: 33.3%;
 	}
 
 }
