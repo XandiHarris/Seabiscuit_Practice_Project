@@ -76,11 +76,12 @@ img {
 /* ---- Navigation ---- */
 
 .main-header {
-	Height:850px;
+	background: #D0C5B1;
+	/* Height:850px;
 	background-image: url(../images/bedbiscuit.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .name,{
