@@ -39,17 +39,14 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
 	color: #7F493F;
+	text-align: justify;
 }
 
 h1 {
 	font-size: 2.5em;
 }
 
-h1,
-h2 {
-	color: #BF1932;
-	margin: 0;
-}
+
 
 
 h3,
@@ -78,6 +75,9 @@ img {
 
 .main-header {
 	background: #D0C5B1;
+	top: 0;
+	position: sticky;
+	box-shadow: 0px 1px 3px 3px #3E262A;
 }
 
 /* Height:850px;
@@ -127,6 +127,15 @@ img {
 	color: #3E262A ;
 }
 
+.insta {
+	width: 25%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	display: block;
+	float: left;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -156,6 +165,7 @@ img {
 	background: #9E6D41;
 	padding: 2em 0;
 	margin-top: 30px;
+
 }
 
 /* ---- Page Elements ---- */
@@ -171,6 +181,32 @@ img {
 /* ================================= 
   Media Queries
 ==================================== */
+
+@media (max-width: 768px) {
+
+	.container {
+		width: 95%;
+		margin: 2%;
+	}
+
+	.main-nav li{
+		text-align: center;
+		float: left;
+
+
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.name,
+	.sub-head {
+		font-size: 1.5em;
+	}
+}
 
 @media (min-width: 769px) {
 
@@ -193,6 +229,7 @@ img {
 	.main-nav li {
 		display: inline-block;
 		margin-left: 15px;
+	
 	}
 
 	.tagline {
@@ -215,9 +252,10 @@ img {
 @media (min-width: 1025px) {
 	
 	.container {
-		width: 80%;
+		width: 70%;
 		max-width: 1150px;
 	}
+	
 
 	.one,
 	.two,
