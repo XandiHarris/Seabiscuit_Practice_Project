@@ -77,14 +77,15 @@ img {
 
 .main-header {
 	background: #D0C5B1;
-	/* Height:850px;
+}
+
+/* Height:850px;
 	background-image: url(../images/bedbiscuit.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover; */
-}
 
-.name,{
+.name {
 	font-size: 2.5em;
 	margin-top: 0;
 	margin-bottom: 0;
